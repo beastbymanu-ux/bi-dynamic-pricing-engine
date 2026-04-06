@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  dynamic-pricing-engine:
+    build: ./dashboard
+    container_name: dynamic-pricing
+    ports:
+      - "8508:8508"
+    restart: always
